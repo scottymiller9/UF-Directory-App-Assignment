@@ -9,12 +9,9 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
          */
         $scope.addListing = function () {
             $scope.listings.push({"code": $scope.code, "name": $scope.name});
-            refresh();
         };
         $scope.deleteListing = function (index) {
-            var listing_to_delete = $scope.listings[index];
             $scope.listings.splice(index, 1);
-            refresh();
         };
         $scope.showDetails = function (index) {
             $scope.entry = $scope.listings[index]
