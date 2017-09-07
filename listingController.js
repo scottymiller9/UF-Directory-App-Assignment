@@ -8,7 +8,11 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
           as described in the assignment spec.
          */
         $scope.addListing = function () {
-            $scope.listings.push({"code": $scope.code, "name": $scope.name});
+            $scope.listings.push({
+                "code": $scope.code,
+                "name": $scope.name,
+                "address": $scope.street + ", " + $scope.city + ", " + $scope.state + " " + $scope.zip + ", USA"
+            });
         };
         $scope.deleteListing = function (index) {
             $scope.listings.splice(index, 1);

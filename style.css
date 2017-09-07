@@ -1,8 +1,27 @@
 #searchBar {
   margin: 15px 10px;
 }
-
 .tableWrapper {
   max-height: 400px;
   overflow: auto;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+.jumbotron {
+    background-color: red;
+}
+
+.btn {
+    background-color: dodgerblue;
 }
